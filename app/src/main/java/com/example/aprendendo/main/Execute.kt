@@ -10,25 +10,16 @@ public class Execute() {
     
     // Função que calcula a velocidade final de um objeto com relação à gravidade baseado em sua massa
     fun acceleration(): Double{
-        val g = 9.8 //m/s aceleração gravitacional
-        val m: Double //massa do objeto em gramas
-        val h: Int
-        val acceleration: Double
+        println("Funcao de aceleracao.\nDigite o valor de delta T em segundos: ")
+        val deltaT = readln().toDouble()
 
-        print("Digite o valor da massa do objeto: ")
-        m = readLine()!!.toDouble()
+        println("Digite o valor de delta V em metros por segundos: ")
+        val deltaV = readln().toDouble()
 
-        print("\nDigite o valor da altura em metros: ")
-        h = readLine()!!.toInt()
+        val deltaA: Double = deltaV / deltaT
+        print("A aceleracao foi de $deltaA m/s")
 
-
-        //Vf = Vo ± at, em que:
-        //Vf — velocidade final do objeto em m/s;
-        //Vo — velocidade inicial do objeto em m/s;
-        //a — aceleração em m/s²;
-        //t — tempo percorrido em segundos.*/
-
-        return 0.0
+        return deltaA
     }
 
     //Função que soma dois numeros

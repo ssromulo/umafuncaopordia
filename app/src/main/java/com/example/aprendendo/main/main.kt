@@ -5,5 +5,5 @@ package com.example.aprendendo.main
 
 fun main() {
     val letsgo = Execute()
-    letsgo.averageSpeed()
+    letsgo.acceleration()
 }
