@@ -7,6 +7,22 @@ import java.text.DecimalFormat
 
 public class Execute() {
     //Nova função a partir daqui
+
+    //Função que calcula a média entre dois números
+    fun calcMedia(): Double{
+        val numA: Double
+        val numB: Double
+        val res: Double
+
+        println("Funcao de calculo de media.\nDigite o valor do primeiro numero: ")
+        numA = readln().toDouble()
+        println("Digite o valor do segundo numero: ")
+        numB = readln().toDouble()
+
+        res = (numA + numB) / 2
+        println("A media entre $numA e $numB eh: $res")
+        return res
+    }
     
     // Função que calcula a velocidade final de um objeto com relação à gravidade baseado em sua massa
     fun acceleration(): Double{
@@ -16,8 +32,11 @@ public class Execute() {
         println("Digite o valor de delta V em metros por segundos: ")
         val deltaV = readln().toDouble()
 
-        val deltaA: Double = deltaV / deltaT
-        print("A aceleracao foi de $deltaA m/s")
+        val toDecimal = DecimalFormat("#.##")
+
+        val deltaA = deltaV / deltaT
+        val formated = toDecimal.format(deltaA)
+        print("A aceleracao foi de $formated m/s")
 
         return deltaA
     }
