@@ -9,4 +9,5 @@ fun main() {
     letsgo.acceleration()
     letsgo.averageSpeed()
     letsgo.calcMedia()
+    letsgo.entradaImovel()
 }

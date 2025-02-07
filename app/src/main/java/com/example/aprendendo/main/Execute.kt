@@ -6,7 +6,27 @@ import java.text.DecimalFormat
 //@objetcive: Escrever uma função por dia a fim de resolver um problema real.
 
 public class Execute() {
-    //Nova função a partir daqui
+    //Nova função a partir daqui. As funções estão organizadas da mais recente para a mais antiga.
+
+    //Função que calcula quanto é necessário de entrada para financiar um imóvel.
+    fun entradaImovel(): Double{
+        val valImovel: Double
+        val valEntrada: Double
+        val valFinan: Double
+        val renda: Double
+
+        println("Funcao que calcula o valor de entrada de um imovel.\nDigite o valor do imovel em reais: ")
+        valImovel = readln().toDouble()
+        println("Digite sua renda mensal em reais: ")
+        renda = readln().toDouble()
+
+        valEntrada = valImovel * 0.2
+        valFinan = valImovel - valEntrada
+
+        println("O valor de entrada do imovel eh $valEntrada.\nO valor restante a ser financiado eh $valFinan.")
+
+        return valEntrada
+    }
 
     //Função que calcula a média entre dois números
     fun calcMedia(): Double{
