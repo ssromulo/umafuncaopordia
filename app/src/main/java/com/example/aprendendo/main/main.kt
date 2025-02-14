@@ -5,6 +5,8 @@ package com.example.aprendendo.main
 
 fun main() {
     val letsgo = Execute()
+
+    letsgo.porcentagem()
     letsgo.helloWorld()
     letsgo.acceleration()
     letsgo.averageSpeed()

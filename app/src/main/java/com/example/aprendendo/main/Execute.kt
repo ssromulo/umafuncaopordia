@@ -8,6 +8,23 @@ import java.text.DecimalFormat
 public class Execute() {
     //Nova função a partir daqui. As funções estão organizadas da mais recente para a mais antiga.
 
+    //Função que calcula a porcentagem de um número
+    fun porcentagem(): Double{
+        val number: Int
+        val porcent: Double
+        val res: Double
+
+        print("Digite o valor do numero que deseja saber a porcentagem: ")
+        number = readln().toInt()
+        print("Digite quantos porcento voce deseja do numero $number: ")
+        porcent = readln().toDouble()
+
+        res = number * (porcent/100)
+        print("$porcent% de $number eh igual a: $res")
+
+        return res
+    }
+
     //Função que calcula quanto é necessário de entrada para financiar um imóvel.
     fun entradaImovel(): Double{
         val valImovel: Double
